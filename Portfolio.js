@@ -56,12 +56,15 @@ ScrollReveal().reveal('.home-img,.service-container,.portfolio-box,.contact form
 ScrollReveal().reveal('.home-content h1,.about-img' ,{ origin: 'left' });
 ScrollReveal().reveal('.home-content p,.about-content' ,{ origin: 'right' });
 
-
-// ttped JS
-const typed = new Typed('.multiple-text',{
+var typed = new Typed('#multiple-text',{
     strings:['Frontend Developer','Youtube','Blogger'],
-typeSpeed:100,
-backSpeed:100,
-backdelay:1000,
+typeSpeed: 100,
+backSpeed: 100,
+backDelay: 1000,
 loop:true
 });
+
+//var typed = new Typed('#element', {
+  //  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+    //typeSpeed: 50,
+  //});

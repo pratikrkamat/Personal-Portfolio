@@ -32,39 +32,15 @@ window.onscroll = () => {
 
 //    sticky navbar
 let header = document.querySelector('header');
-header.classList.toggle('sticky',window.scrolly >100);
+
+header.classList.toggle('sticky',window.scrollY >100);
 // remove toggle
 
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
-
-
 };
 
-// Scroll revel
-ScrollReveal({ 
-    //reset: true,
-    dsitance:'80px',
-    duration:2000,
-delay: 200
 
-});
 
-ScrollReveal().reveal('.home-content,.heading' ,{ origin: 'top' });
-ScrollReveal().reveal('.home-img,.service-container,.portfolio-box,.contact form' ,{ origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1,.about-img' ,{ origin: 'left' });
-ScrollReveal().reveal('.home-content p,.about-content' ,{ origin: 'right' });
 
-var typed = new Typed('#multiple-text',{
-    strings:['Frontend Developer','Youtube','Blogger'],
-typeSpeed: 100,
-backSpeed: 100,
-backDelay: 1000,
-loop:true
-});
-
-//var typed = new Typed('#element', {
-  //  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-    //typeSpeed: 50,
-  //});
